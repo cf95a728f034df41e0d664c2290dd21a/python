@@ -1,5 +1,9 @@
 # 继承进程类
 
+[multiprocessing](https://docs.python.org/3/library/multiprocessing.html)
+
+[list-comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
+
 ```python
 import time
 from multiprocessing import Process
