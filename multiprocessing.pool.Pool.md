@@ -1,6 +1,14 @@
 # 使用进程池
 
-## 单个参数
+## map
+```python
+map(self, func, iterable, chunksize=None)
+'''
+Apply `func` to each element in `iterable`, collecting the results
+in a list that is returned.
+'''
+```
+
 ```python
 import time
 from multiprocessing.pool import Pool as ProcessPool
@@ -31,7 +39,16 @@ if __name__ == '__main__':
     main()
 ```
 
-## 多个参数
+## starmap
+```python
+starmap(func, iterable, chunksize=None)
+'''
+Like `map()` method but the elements of the `iterable` are expected to
+be iterables as well and will be unpacked as arguments. Hence
+`func` and (a, b) becomes func(a, b).
+'''
+```
+
 ```python
 import time
 from multiprocessing.pool import Pool as ProcessPool
@@ -63,3 +80,12 @@ def main():
     
 if __name__ == '__main__':
     main()
+```
+
+## apply
+```python
+apply(self, func, args=(), kwds={}):
+'''
+Equivalent of `func(*args, **kwds)`.
+'''
+```
