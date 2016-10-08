@@ -10,11 +10,12 @@ class MyThread(Thread):
         self.i = i
 
     def run(self):
-        task()
+        self.task()
         
     def task(self):
-        print(self.i)
+        print('<{}>'.format(self.i))
         time.sleep(3)
+        print('</{}>'.format(self.i))
         
 
 if __name__ == '__main__':
@@ -28,7 +29,6 @@ if __name__ == '__main__':
     # wait
     for t in threads:
         t.join() 
-
 ```
 
 # from multiprocessing import Process
@@ -43,8 +43,12 @@ class MyProcess(Process):
         self.i = i
 
     def run(self):
-        print(self.i)
+        self.task()
+        
+    def task(self):
+        print('<{}>'.format(self.i))
         time.sleep(3)
+        print('</{}>'.format(self.i))
         
 
 if __name__ == '__main__':
@@ -58,7 +62,6 @@ if __name__ == '__main__':
     # wait
     for p in processes:
         p.join() 
-
 ```
 
 # from multiprocessing.dummy import Pool as ThreadPool
@@ -72,15 +75,13 @@ class MyThreadPool:
         self.threads = threads
     
     def _thread(self, i):
-        task()
-        
-    def task(self):
-        print(i)
+        print('<{}>'.format(i))
         time.sleep(3)
+        print('</{}>'.format(i))
 
     def start(self):
         threads_pool = ThreadPool(processes=self.threads)
-        threads_pool.map(self._thread, [i for i in range(self.threads)])
+        threads_pool.map(self._thread, [i for i in range(self.threads * 3)])
         threads_pool.close()
         threads_pool.join()
         
@@ -100,12 +101,13 @@ class MyProcessPool1:
         self.processes = processes
     
     def _process(self, i):
-        print(i)
+        print('<{}>'.format(i))
         time.sleep(3)
+        print('</{}>'.format(i))
 
     def start(self):
         process_pool = ProcessPool(processes=self.processes)
-        process_pool.map(self._process, [i for i in range(self.processes)])
+        process_pool.map(self._process, [i for i in range(self.processes * 3)])
         process_pool.close()
         process_pool.join()
         
@@ -119,13 +121,16 @@ import time
 
 
 def f(i):
-    print(i)
-    time.sleep(3)
+    time.sleep(1)
+    return i * 2
 
 
 if __name__ == '__main__':
-    map(f, [i for i in range(10)])
-
+    g = map(f, [i for i in range(10)])
+    print(g)
+    print(list(g))
+    print(list(g))
+    next(g)
 ```
 
 ```python
@@ -138,14 +143,15 @@ class MyProcessPool2:
         self.processes = processes
     
     def _process(self, i, j):
-        print(i, j)
+        print('<{},{}>'.format(i, j))
         time.sleep(3)
+        print('</{},{}>'.format(i, j))
 
     def start(self):
         process_pool = ProcessPool(processes=self.processes)
         process_pool.starmap(
             self._process,
-            zip([i for i in range(self.processes)], [i ** 2 for i in range(self.processes)])
+            zip([i for i in range(self.processes * 3)], [i ** 2 for i in range(self.processes * 3)])
         )
         process_pool.close()
         process_pool.join()
@@ -161,15 +167,18 @@ import time
 import itertools
 
 
-def f(i):
-    print(i)
-    time.sleep(3)
+def f(i, j):
+    time.sleep(1)
+    return i, j
 
 
 if __name__ == '__main__':
-    itertools.starmap(
+    g = itertools.starmap(
         f,
-        zip([i for i in range(10)], [i ** 2 for i in range(10)]
+        zip([i for i in range(10)], [i ** 2 for i in range(10)])
     )
-
+    print(g)
+    print(list(g))
+    print(list(g))
+    next(g)
 ```
