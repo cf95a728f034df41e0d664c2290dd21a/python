@@ -1,7 +1,8 @@
 # 继承线程类
 
-[threading](https://docs.python.org/3/library/threading.html)
 [string](https://docs.python.org/3/library/string.html)
+
+[threading](https://docs.python.org/3/library/threading.html)
 
 ```python
 import time
