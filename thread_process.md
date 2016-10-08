@@ -1,4 +1,6 @@
-# from threading import Thread
+# 传统并发方式：多线程、多进程，线程池、进程池，map
+
+## 继承线程类
 ```python
 import time
 from threading import Thread
@@ -31,7 +33,7 @@ if __name__ == '__main__':
         t.join() 
 ```
 
-# from multiprocessing import Process
+# 继承进程类
 ```python
 import time
 from multiprocessing import Process
@@ -64,7 +66,7 @@ if __name__ == '__main__':
         p.join() 
 ```
 
-# from multiprocessing.dummy import Pool as ThreadPool
+## 使用线程池
 ```python
 import time
 from multiprocessing.dummy import Pool as ThreadPool
@@ -90,7 +92,7 @@ if __name__ == '__main__':
     MyThreadPool(10).start()
 ```
 
-# from multiprocessing.pool import Pool as ProcessPool
+## 使用进程池
 ```python
 import time
 from multiprocessing.pool import Pool as ProcessPool
