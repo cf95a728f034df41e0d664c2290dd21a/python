@@ -1,5 +1,7 @@
 # 使用进程池
 
+[multiprocessing](https://docs.python.org/3/library/multiprocessing.html#using-a-pool-of-workers)
+
 ## map
 ```python
 map(self, func, iterable, chunksize=None)
@@ -89,3 +91,13 @@ apply(self, func, args=(), kwds={}):
 Equivalent of `func(*args, **kwds)`.
 '''
 ```
+
+
+## 共享变量
+### Value, Array
+### Manager
+### ctypes
+
+## 临界变量
+### Lock
+### RLock
