@@ -2,6 +2,14 @@
 
 ## map
 ```python
+map(self, func, iterable, chunksize=None)
+'''
+Apply `func` to each element in `iterable`, collecting the results
+in a list that is returned.
+'''
+```
+
+```python
 import time
 from multiprocessing.dummy import Pool as ThreadPool
 
@@ -43,9 +51,8 @@ be iterables as well and will be unpacked as arguments. Hence
 
 ## apply
 ```python
-map(self, func, iterable, chunksize=None)
+apply(self, func, args=(), kwds={}):
 '''
-Apply `func` to each element in `iterable`, collecting the results
-in a list that is returned.
+Equivalent of `func(*args, **kwds)`.
 '''
 ```
