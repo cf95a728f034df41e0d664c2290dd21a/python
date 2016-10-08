@@ -1,19 +1,25 @@
 # from threading import Thread
 ```python
+import time
 from threading import Thread
 
 
 class MyThread(Thread):
-    def __init__(self, *args, **kwargs):
-        Thread.__init__(self, *args, **kwargs)
+    def __init__(self, i):
+        Thread.__init__(self)
+        self.i = i
 
     def run(self):
-        pass
+        task()
+        
+    def task(self):
+        print(self.i)
+        time.sleep(3)
         
 
 if __name__ == '__main__':
-    # create 10 threads
-    threads = [MyThread() for _ in range(10)]
+    # create
+    threads = [MyThread(i) for i in range(10)]
 
     # start
     for t in threads:
@@ -27,20 +33,23 @@ if __name__ == '__main__':
 
 # from multiprocessing import Process
 ```python
+import time
 from multiprocessing import Process
 
 
 class MyProcess(Process):
-    def __init__(self, *args, **kwargs):
-        Process.__init__(self, *args, **kwargs)
+    def __init__(self, i):
+        Process.__init__(self)
+        self.i = i
 
     def run(self):
-        pass
+        print(self.i)
+        time.sleep(3)
         
 
 if __name__ == '__main__':
-    # create 10 processes
-    processes = [MyProcess() for _ in range(10)]
+    # create
+    processes = [MyProcess(i) for i in range(10)]
 
     # start
     for p in processes:
@@ -63,6 +72,9 @@ class MyThreadPool:
         self.threads = threads
     
     def _thread(self, i):
+        task()
+        
+    def task(self):
         print(i)
         time.sleep(3)
 
