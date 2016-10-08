@@ -1,11 +1,28 @@
 # 传统并发方式：多线程、多进程，线程池、进程池，map
 
+```python
+from datetime import datetime
+
+
+def elapsed(method):
+    def _elapsed_seconds(*args, **kwargs):
+        dt_begin = datetime.now()
+       
+        result = method(*args, **kwargs)
+        
+        print('{0} {1} {2}s elaples. {0}'.format('-' * 20, repr(method), (datetime.now() - dt_begin).seconds))
+        
+        return result
+        
+    return _elapsed_seconds
+```
+
 ## 继承线程类
 ```python
 import time
 from threading import Thread
 
-
+        
 class MyThread(Thread):
     def __init__(self, i):
         Thread.__init__(self)
@@ -19,8 +36,10 @@ class MyThread(Thread):
         time.sleep(3)
         print('</{}>'.format(self.i))
         
-
-if __name__ == '__main__':
+@elapsed
+def main():
+    dt = datetime.now()
+    
     # create
     threads = [MyThread(i) for i in range(10)]
 
@@ -31,6 +50,11 @@ if __name__ == '__main__':
     # wait
     for t in threads:
         t.join() 
+        
+  
+  
+if __name__ == '__main__':
+    main()
 ```
 
 # 继承进程类
@@ -53,7 +77,8 @@ class MyProcess(Process):
         print('</{}>'.format(self.i))
         
 
-if __name__ == '__main__':
+@elapsed
+def main():
     # create
     processes = [MyProcess(i) for i in range(10)]
 
@@ -64,6 +89,10 @@ if __name__ == '__main__':
     # wait
     for p in processes:
         p.join() 
+
+
+if __name__ == '__main__':
+    main()
 ```
 
 ## 使用线程池
@@ -87,9 +116,14 @@ class MyThreadPool:
         threads_pool.close()
         threads_pool.join()
         
+        
+@elapsed
+def main():
+    MyThreadPool(10).start()
+        
 
 if __name__ == '__main__':
-    MyThreadPool(10).start()
+    main()
 ```
 
 ## 使用进程池
@@ -113,10 +147,15 @@ class MyProcessPool1:
         process_pool.map(self._process, [i for i in range(self.processes * 3)])
         process_pool.close()
         process_pool.join()
+    
+    
+@elapsed
+def main():
+    MyProcessPool1(10).start()
         
 
 if __name__ == '__main__':
-    MyProcessPool1(10).start()
+    main()
 ```
 
 ### 单个参数可用map简写
@@ -129,12 +168,17 @@ def f(i):
     return i * 2
 
 
-if __name__ == '__main__':
+@elapsed
+def main():
     g = map(f, [i for i in range(10)])
     print(g)
     print(list(g))
     print(list(g))
-    next(g)
+    # next(g)
+    
+    
+if __name__ == '__main__':
+    main()
 ```
 
 ### 多个参数
@@ -162,8 +206,13 @@ class MyProcessPool2:
         process_pool.join()
         
 
-if __name__ == '__main__':
+@elapsed
+def main():
     MyProcessPool2(10).start()
+    
+    
+if __name__ == '__main__':
+    main()
 ```
 
 ### 多个参数可用itertools.starmap简写
@@ -177,7 +226,8 @@ def f(i, j):
     return i, j
 
 
-if __name__ == '__main__':
+@elapsed
+def main():
     g = itertools.starmap(
         f,
         zip([i for i in range(10)], [i ** 2 for i in range(10)])
@@ -185,5 +235,9 @@ if __name__ == '__main__':
     print(g)
     print(list(g))
     print(list(g))
-    next(g)
+    # next(g)
+    
+    
+if __name__ == '__main__':
+    main()
 ```
