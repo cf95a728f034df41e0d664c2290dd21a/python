@@ -1,5 +1,7 @@
 # map
 
+[map](https://docs.python.org/3/library/functions.html#map)
+
 ```python
 import time
 
