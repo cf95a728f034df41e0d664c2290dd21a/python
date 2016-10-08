@@ -93,11 +93,13 @@ Equivalent of `func(*args, **kwds)`.
 ```
 
 
-## 共享变量
+[sharing-state-between-processes](https://docs.python.org/3/library/multiprocessing.html#sharing-state-between-processes)
+## 状态共享
 ### Value, Array
 ### Manager
 ### ctypes
 
-## 临界变量
+[synchronization-between-processes](https://docs.python.org/3/library/multiprocessing.html#synchronization-between-processes)
+## 状态同步
 ### Lock
 ### RLock
