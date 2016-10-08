@@ -57,16 +57,18 @@ async def get_json(client, url):
 
 
 async def get_reddit_top(subreddit, client):  
-    data1 = await get_json(client, 'https://www.reddit.com/r/' + subreddit + '/top.json?sort=top&t=day&limit=5')
+    print('BEGIN:', subreddit + '\n')
+    
+    data1 = await get_json(client, 'https://www.reddit.com/r/{}/top.json?sort=top&t=day&limit=5'.format(subreddit))
 
     j = json.loads(data1.decode('utf-8'))
     for i in j['data']['children']:
         score = i['data']['score']
         title = i['data']['title']
         link = i['data']['url']
-        print(str(score) + ': ' + title + ' (' + link + ')')
+        print('{}: {} ({})'.format(score, title, link))
 
-    print('DONE:', subreddit + '\n')
+    print('END:', subreddit + '\n')
 
 
 def signal_handler(signal, frame):  
