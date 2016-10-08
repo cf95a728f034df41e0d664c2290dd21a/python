@@ -133,3 +133,6 @@ if __name__ == '__main__':
     recv.send('Hello')
     recv.send('World')
 ```
+
+![](https://github.com/cf95a728f034df41e0d664c2290dd21a/python/blob/master/images/yield_send.png)
+
