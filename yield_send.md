@@ -72,10 +72,10 @@ def take(n, iterable):
     return list(itertools.islice(iterable, 0, n))
 
 def fibonacci():
-  a, b = (0, 1)
-  while True:
-    yield b
-    a, b = b, a + b
+    a, b = (0, 1)
+    while True:
+        yield b
+        a, b = b, a + b
 
 
 if __name__ == '__main__':
