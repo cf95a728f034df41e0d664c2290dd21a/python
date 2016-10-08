@@ -83,7 +83,7 @@ if __name__ == '__main__':
 ```
 
 ```haskell
--- 上述实现在函数式编程语言会更加简单，比如说Haskell
+-- 上述实现在函数式编程语言中会更加简单，比如说Haskell
 fibs :: [Int]
 fibs = 1 : 1 : zipWith (+) fibs (tail fibs)
 
