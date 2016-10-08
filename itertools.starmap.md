@@ -1,5 +1,7 @@
 # starmap
 
+[starmap](https://docs.python.org/3/library/itertools.html#itertools.starmap)
+
 ```python
 import time
 import itertools
