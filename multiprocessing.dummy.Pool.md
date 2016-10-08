@@ -1,5 +1,7 @@
 # 使用线程池
 
+[multiprocessing.dummy](/https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.dummy)
+
 ## map
 ```python
 map(self, func, iterable, chunksize=None)
