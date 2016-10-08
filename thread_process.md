@@ -17,7 +17,7 @@ def elapsed(method):
     return _elapsed_seconds
 ```
 
-## 继承线程类
+## 1. 继承线程类
 ```python
 import time
 from threading import Thread
@@ -57,7 +57,7 @@ if __name__ == '__main__':
     main()
 ```
 
-# 继承进程类
+## 2. 继承进程类
 ```python
 import time
 from multiprocessing import Process
@@ -95,7 +95,7 @@ if __name__ == '__main__':
     main()
 ```
 
-## 使用线程池
+## 3. 使用线程池
 ```python
 import time
 from multiprocessing.dummy import Pool as ThreadPool
@@ -126,8 +126,8 @@ if __name__ == '__main__':
     main()
 ```
 
-## 使用进程池
-### 单个参数
+## 4. 使用进程池
+### 4.1. 单个参数
 ```python
 import time
 from multiprocessing.pool import Pool as ProcessPool
@@ -158,7 +158,7 @@ if __name__ == '__main__':
     main()
 ```
 
-### 单个参数可用map简写
+### 4.2. 单个参数可用map简写
 ```python
 import time
 
@@ -181,7 +181,7 @@ if __name__ == '__main__':
     main()
 ```
 
-### 多个参数
+### 4.3. 多个参数
 ```python
 import time
 from multiprocessing.pool import Pool as ProcessPool
@@ -215,7 +215,7 @@ if __name__ == '__main__':
     main()
 ```
 
-### 多个参数可用itertools.starmap简写
+### 4.4. 多个参数可用itertools.starmap简写
 ```python
 import time
 import itertools
