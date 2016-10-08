@@ -119,3 +119,17 @@ if __name__ == '__main__':
         print(i, interest)
         my_account.send(deposited + interest)
 ```
+
+```python
+def receiver():
+    while True:
+        item = yield
+        print('Got', item)
+
+
+if __name__ == '__main__':
+    recv = receiver()
+    #next(recv) # alias: recv.send(None)
+    recv.send('Hello')
+    recv.send('World')
+```
