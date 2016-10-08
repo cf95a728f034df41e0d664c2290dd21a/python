@@ -1,6 +1,6 @@
 # 继承进程类
 
-[multiprocessing](https://docs.python.org/3/library/multiprocessing.html)
+[multiprocessing](https://docs.python.org/3/library/multiprocessing.html#the-process-class)
 
 [list-comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
 
