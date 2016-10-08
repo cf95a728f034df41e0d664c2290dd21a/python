@@ -93,6 +93,7 @@ if __name__ == '__main__':
 ```
 
 ## 使用进程池
+### 单个参数
 ```python
 import time
 from multiprocessing.pool import Pool as ProcessPool
@@ -118,6 +119,7 @@ if __name__ == '__main__':
     MyProcessPool1(10).start()
 ```
 
+### 单个参数可用map简写
 ```python
 import time
 
@@ -135,6 +137,7 @@ if __name__ == '__main__':
     next(g)
 ```
 
+### 多个参数
 ```python
 import time
 from multiprocessing.pool import Pool as ProcessPool
@@ -163,7 +166,7 @@ if __name__ == '__main__':
     MyProcessPool2(10).start()
 ```
 
-
+### 多个参数可用itertools.starmap简写
 ```python
 import time
 import itertools
