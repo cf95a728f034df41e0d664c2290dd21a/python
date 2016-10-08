@@ -129,7 +129,7 @@ def receiver():
 
 if __name__ == '__main__':
     recv = receiver()
-    #next(recv) # alias: recv.send(None)
+    next(recv) # alias: recv.send(None)
     recv.send('Hello')
     recv.send('World')
 ```
