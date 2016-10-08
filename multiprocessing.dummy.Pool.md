@@ -1,5 +1,6 @@
 # 使用线程池
 
+## map
 ```python
 import time
 from multiprocessing.dummy import Pool as ThreadPool
@@ -28,4 +29,23 @@ def main():
 
 if __name__ == '__main__':
     main()
+```
+
+## starmap
+```python
+starmap(func, iterable, chunksize=None)
+'''
+Like `map()` method but the elements of the `iterable` are expected to
+be iterables as well and will be unpacked as arguments. Hence
+`func` and (a, b) becomes func(a, b).
+'''
+```
+
+## apply
+```python
+map(self, func, iterable, chunksize=None)
+'''
+Apply `func` to each element in `iterable`, collecting the results
+in a list that is returned.
+'''
 ```
