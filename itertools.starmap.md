@@ -1,3 +1,5 @@
+# starmap
+
 ```python
 import time
 import itertools
