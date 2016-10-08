@@ -2,6 +2,8 @@
 
 [starmap](https://docs.python.org/3/library/itertools.html#itertools.starmap)
 
+[itertools](https://docs.python.org/3/library/itertools.html)
+
 ```python
 import time
 import itertools
