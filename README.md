@@ -13,7 +13,7 @@
 ## 2. 协程
 
 ### 2.1. [yield, send](/yield_send.md)
-### 2.2. [coroutine, yield from.md](/yield_from.md)
+### 2.2. [coroutine, yield from](/yield_from.md)
 ### 2.3. [async, await](/async_await.md)
 ### 2.4. [一个复杂的例子](/dht.md)
 
