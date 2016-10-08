@@ -1,4 +1,6 @@
-# submit
+# 使用线程池
+
+## submit
 
 
 ```python
@@ -31,5 +33,5 @@ if __name__ == '__main__':
     main()
 ```
 
-# map
+## map
 map(func, *iterables, timeout=None, chunksize=1)
