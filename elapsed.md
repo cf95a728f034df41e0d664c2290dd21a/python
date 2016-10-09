@@ -6,7 +6,7 @@ from datetime import datetime
 
 
 def elapsed(method):
-    @functools.wraps(f)
+    @functools.wraps(method)
     def _elapsed_seconds(*args, **kwargs):
         dt_begin = datetime.now()
        
