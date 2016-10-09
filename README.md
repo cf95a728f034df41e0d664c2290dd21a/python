@@ -30,20 +30,20 @@
 ### 4.3. [Django urls定义](/django_urls.md)
 ### 4.4. [大分枝结构](/if_elif_else.md)
 ### 4.5. [datetime](/datetime1.md)
-### 4.6. /yqjr/Python/trunk/dcs/regist/api.py@all
-### 4.7. /yqjr/Python/trunk/dcs/regist/multithread.py@run
-### 4.8. /yqjr/Python/trunk/dcs/regist/saveinfo.py@update_regist_info
-### 4.9. /yqjr/Python/trunk/dcs/rest/decorators.py
-### 4.10. /yqjr/Python/trunk/dcs/rest/middleware.py
-### 4.11. /yqjr/Python/trunk/dcs/rest/signals.py
+### 4.6. [dcs_regist_api](/dcs_regist_api.md)
+### 4.7. [dcs_regist_multithread](/dcs_regist_multithread.md)
+### 4.8. [dcs_regist_saveinfo](/dcs_regist_saveinfo.md)
+### 4.9. [dcs_rest_decorators](/dcs_rest_decorators.md)
+### 4.10. [dcs_rest_middleware](/dcs_rest_middleware.md)
+### 4.11. [dcs_rest_signals](/dcs_rest_signals.md)
 ### 4.12. [datetime](/datetime2.md)
-### 4.13. /yqjr/Python/trunk/dcs/telecom/service/cqservice.py@fetch_detail
-### 4.14. /yqjr/Python/trunk/dcs/telecom/service/cqservice.py@fetch_each_bill
-### 4.15. /yqjr/Python/trunk/dcs/telecom/service/scservice.py@get_basic_info
+### 4.13. [dcs_telecom_service_cqservice](/dcs_telecom_service_cqservice.md)
+### 4.14. [dcs_telecom_service_scservice](/dcs_telecom_service_scservice.md)
 
 
 ## 5. 书籍推荐
-### 5.1. [Python进阶](https://eastlakeside.gitbooks.io/interpy-zh/content/)
-### 5.2. [Python 3 Module of the Week](https://pymotw.com/3/)
-### 5.3. [Pro Python 2nd ed. Edition](https://www.amazon.com/Pro-Python-Marty-Alchin/dp/1484203356/)
-### 5.4. [Fluent Python 1st Edition](https://www.amazon.com/Fluent-Python-Luciano-Ramalho/dp/1491946008/)
+### 5.1. [Python Cookbook 3rd Edition]http://python3-cookbook.readthedocs.io/zh_CN/latest/
+### 5.2. [Python进阶](https://eastlakeside.gitbooks.io/interpy-zh/content/)
+### 5.3. [Python 3 Module of the Week](https://pymotw.com/3/)
+### 5.4. [Pro Python 2nd ed. Edition](https://www.amazon.com/Pro-Python-Marty-Alchin/dp/1484203356/)
+### 5.5. [Fluent Python 1st Edition](https://www.amazon.com/Fluent-Python-Luciano-Ramalho/dp/1491946008/)
