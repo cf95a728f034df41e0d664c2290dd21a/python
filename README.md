@@ -45,3 +45,5 @@
 ## 5. 书籍推荐
 ### 5.1. [Python进阶](https://eastlakeside.gitbooks.io/interpy-zh/content/)
 ### 5.2. [Python 3 Module of the Week](https://pymotw.com/3/)
+### 5.3. [Pro Python 2nd ed. Edition](https://www.amazon.com/Pro-Python-Marty-Alchin/dp/1484203356/)
+### 5.4. [Fluent Python 1st Edition](https://www.amazon.com/Fluent-Python-Luciano-Ramalho/dp/1491946008/)
