@@ -26,7 +26,7 @@
 
 ## 4. 代码阅读
 ### 4.1. [求素数](/nested.md)
-### 4.2. [DJango Model定义](/django_model.md)
+### 4.2. [Django Model定义](/django_model.md)
 ### 4.3. [Django urls定义](/django_urls.md)
 ### 4.4. [大分枝结构](/if_elif_else.md)
 ### 4.5. [datetime](/datetime1.md)
