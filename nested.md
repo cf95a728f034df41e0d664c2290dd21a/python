@@ -37,3 +37,15 @@ def is_prime(number):
     for current in range(3, int(math.sqrt(number) + 1), 2):
         return number % current == 0
 ```
+
+
+```python
+# 更直观的版本，直接根据素数定义来写的，时间复杂度并不好
+def get_primes(n):
+    for n in range(2, n):
+        for x in range(2, n):
+            if n % x == 0:
+                break
+        else:
+            yield n
+```
