@@ -20,24 +20,6 @@ class UserInfos(models.Model):
 	create_time     创建时间
 	'''
 	real_name=models.CharField(max_length=100,null=True)
-	gender=models.CharField(max_length=10,null=True)
-	email=models.CharField(max_length=50,null=True)
-	birthday=models.CharField(max_length=50,null=True)
-	marriage=models.CharField(max_length=10,null=True)
-	month_salary=models.CharField(max_length=50,null=True)
-	idcard=models.CharField(max_length=50,null=True)
-	education=models.CharField(max_length=10,null=True)
-	industry=models.CharField(max_length=30,null=True)
-	qq=models.CharField(max_length=30,null=True)
-	username=models.CharField(max_length=50,null=True)
-	password=models.CharField(max_length=50,null=True)
-	wechat=models.CharField(max_length=50,null=True)
-	hobbies=models.CharField(max_length=500,null=True)
-
-	create_time=models.DateTimeField(auto_now_add=True)
-
-	class Meta:
-		db_table = 'jd_user_infos'
 
 	def to_json(self):
 		return {
@@ -58,4 +40,18 @@ class UserInfos(models.Model):
 			'hobbies': self.hobbies,
 
 		}
+```
+
+
+## 1. Field定义
+```python
+	real_name = models.CharField(max_length=100, null=True, verbose_name='...', help_test='...')
+```
+
+## 2. to_json
+```python
+	exclude_fields = {'create_time'}
+	return {
+		field.name: getattr(field.name) for field in MyModel._meta.get_fields() if field.name not in exclude_fields
+	}
 ```
