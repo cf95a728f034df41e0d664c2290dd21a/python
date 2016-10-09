@@ -52,6 +52,8 @@ class UserInfos(models.Model):
 ```python
 	exclude_fields = {'create_time'}
 	return {
-		field.name: getattr(field.name) for field in MyModel._meta.get_fields() if field.name not in exclude_fields
+		field.name: getattr(field.name)
+		for field in MyModel._meta.get_fields()
+		if field.name not in exclude_fields
 	}
 ```
