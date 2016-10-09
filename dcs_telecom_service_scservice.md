@@ -12,9 +12,9 @@ def get_basic_info(token):
 def get_basic_info(token):
 	name = (root.xpath('//div[@class="datacon"]//div[1]//span//text()') or [''])[0].encode('utf-8')
 
-	dt = datetime.now()
-    create_datetime = time.strftime('%Y-%m-%d %H:%M:%S', dt)
-	modify_datetime = time.strftime('%Y-%m-%d %H:%M:%S', dt)
+	dt = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    	create_datetime = dt
+	modify_datetime = dt
 ```
 
 
