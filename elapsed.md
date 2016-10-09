@@ -1,10 +1,12 @@
 # 装饰器，计算方法耗时
 
 ```python
+import functools
 from datetime import datetime
 
 
 def elapsed(method):
+    @functools.wraps(f)
     def _elapsed_seconds(*args, **kwargs):
         dt_begin = datetime.now()
        
