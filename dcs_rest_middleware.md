@@ -18,6 +18,6 @@ class TokenRequireMiddleware(object):
     def process_request(self, request):
         if reverse('getToken') == request.path:
             request.permit = {}
-            setattr.token = str(token)
+            request.token = str(token)
       
 ```
