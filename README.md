@@ -25,3 +25,10 @@
 ### 3.2. twisted
 ### 3.3. gevent
 ### 3.4. celery
+
+## 4. 代码阅读
+
+
+## 5. 书籍推荐
+### 5.1. [Python进阶](https://eastlakeside.gitbooks.io/interpy-zh/content/)
+### 5.2. [Python 3 Module of the Week](https://pymotw.com/3/)
