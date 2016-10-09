@@ -42,7 +42,7 @@
 
 
 ## 5. 书籍推荐
-### 5.1. [Python Cookbook 3rd Edition]http://python3-cookbook.readthedocs.io/zh_CN/latest/
+### 5.1. [Python Cookbook 3rd Edition](http://python3-cookbook.readthedocs.io/zh_CN/latest/)
 ### 5.2. [Python进阶](https://eastlakeside.gitbooks.io/interpy-zh/content/)
 ### 5.3. [Python 3 Module of the Week](https://pymotw.com/3/)
 ### 5.4. [Pro Python 2nd ed. Edition](https://www.amazon.com/Pro-Python-Marty-Alchin/dp/1484203356/)
