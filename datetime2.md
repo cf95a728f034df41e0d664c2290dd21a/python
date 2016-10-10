@@ -31,7 +31,7 @@ import calendar
 import datetime
 
 
-# [x for x in get_last_months()]
+# list(get_last_months())
 def get_last_months(n=6):
     month_first_day = datetime.date.today().replace(day=1)
     month_last_day = month_first_day.replace(day=calendar.monthrange(month_first_day.year, month_first_day.month)[-1])
