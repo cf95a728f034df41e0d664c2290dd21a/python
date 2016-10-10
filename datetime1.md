@@ -8,7 +8,7 @@ def getYearList():
 
 
 ```python
-# [x for x in get_last_years()]
+# list(get_last_years())
 def get_last_years(n=3):
     year = datetime.datetime.now().year
     for _ in range(n):
