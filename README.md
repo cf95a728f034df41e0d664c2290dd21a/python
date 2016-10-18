@@ -47,3 +47,6 @@
 ### 5.3. [Python 3 Module of the Week](https://pymotw.com/3/)
 ### 5.4. [Pro Python 2nd ed. Edition](https://www.amazon.com/Pro-Python-Marty-Alchin/dp/1484203356/)
 ### 5.5. [Fluent Python 1st Edition](https://www.amazon.com/Fluent-Python-Luciano-Ramalho/dp/1491946008/)
+### 5.6. [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
+### 5.7. [The Python Standard Library](https://docs.python.org/3/library/index.html)
+### 5.8. [The Python Language Reference](https://docs.python.org/3/reference/index.html)
