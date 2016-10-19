@@ -63,3 +63,5 @@
 ### 5.19. [xpath](http://www.w3school.com.cn/xpath/index.asp)
 ### 5.20. [Thrift](https://thrift.apache.org/tutorial/py)
 ### 5.21. [Docker & Compose](https://docs.docker.com/compose/gettingstarted/)
+### 5.22. [RabbitMQ](https://www.rabbitmq.com/tutorials/tutorial-one-python.html)
+### 5.23. [pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html)
