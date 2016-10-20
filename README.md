@@ -87,3 +87,8 @@
 ### [SciPy](https://docs.scipy.org/doc/)
 ### [NumPy](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
 ### [Matplotlib](http://matplotlib.org/1.5.3/index.html)
+
+
+## 7. 锻炼技能
+### [各种难题](https://projecteuler.net/archives)
+### [PK一下](https://www.codewars.com/)
