@@ -83,10 +83,8 @@
 ### 容器技术
 ### [Docker and Compose](https://docs.docker.com/compose/gettingstarted/)
 
-### 数据分析
+### 数据分析, 数据工具
 ### [pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html)
-
-### 数学工具
 ### [SciPy](https://docs.scipy.org/doc/)
 ### [NumPy](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
 ### [Matplotlib](http://matplotlib.org/1.5.3/index.html)
