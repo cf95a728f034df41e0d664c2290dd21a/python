@@ -54,23 +54,26 @@
 
 ## 6. 组件推荐
 
-### 爬虫相关
+### 爬虫, 信息提取
 ### [Requests](http://docs.python-requests.org/en/master/)
 ### [lxml](http://lxml.de/)
 ### [xpath](http://www.w3school.com.cn/xpath/index.asp)
 ### [CSS Selector](http://www.w3school.com.cn/jquery/jquery_ref_selectors.asp)
 ### [Scrapy](https://doc.scrapy.org/en/latest/)
 
-### 网络框架
+### Web框架, ORM
 ### [Flask](http://flask.pocoo.org/docs/)
 ### [Tornado](http://www.tornadoweb.org/en/stable/guide.html)
 ### [Django](https://docs.djangoproject.com)
+### [SQLAlchemy](http://docs.sqlalchemy.org/en/latest/)
 
 ### 数据存储
 ### [MySQL](http://dev.mysql.com/doc/refman/5.7/en/)
 ### [PostgreSQL](https://www.postgresql.org/docs/9.6/static/index.html)
 ### [Redis](http://redis.io/commands)
 ### [MongoDB](https://docs.mongodb.com/getting-started/python/introduction/)
+
+### 搜索引擎
 ### [ElasticSearch](http://elasticsearch-py.readthedocs.io/en/master/)
 
 ### RPC与消息队列
@@ -91,4 +94,4 @@
 
 ## 7. 锻炼技能
 ### [各种难题](https://projecteuler.net/archives)
-### [PK一下](https://www.codewars.com/)
+### [PK一下](https://www.codewars.com/?language=python)
