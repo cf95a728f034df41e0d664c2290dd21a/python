@@ -52,38 +52,38 @@
 ### 5.8. [The Python Language Reference](https://docs.python.org/3/reference/index.html)
 ### 5.9. [Generators: The Final Frontier](http://dabeaz.com/finalgenerator/FinalGenerator.pdf)
 
-## 5. 组件推荐
+## 6. 组件推荐
 
-爬虫相关
+### 爬虫相关
 ### [Requests](http://docs.python-requests.org/en/master/)
 ### [lxml](http://lxml.de/)
 ### [xpath](http://www.w3school.com.cn/xpath/index.asp)
 ### [CSS Selector](http://www.w3school.com.cn/jquery/jquery_ref_selectors.asp)
 ### [Scrapy](https://doc.scrapy.org/en/latest/)
 
-网络框架
+### 网络框架
 ### [Flask](http://flask.pocoo.org/docs/)
 ### [Tornado](http://www.tornadoweb.org/en/stable/guide.html)
 ### [Django](https://docs.djangoproject.com)
 
-数据存储
+### 数据存储
 ### [MySQL](http://dev.mysql.com/doc/refman/5.7/en/)
 ### [PostgreSQL](https://www.postgresql.org/docs/9.6/static/index.html)
 ### [Redis](http://redis.io/commands)
 ### [MongoDB](https://docs.mongodb.com/getting-started/python/introduction/)
 ### [ElasticSearch](http://elasticsearch-py.readthedocs.io/en/master/)
 
-RPC与消息队列
+### RPC与消息队列
 ### [Thrift](https://thrift.apache.org/tutorial/py)
 ### [RabbitMQ](https://www.rabbitmq.com/tutorials/tutorial-one-python.html)
 
-容器技术
+### 容器技术
 ### [Docker and Compose](https://docs.docker.com/compose/gettingstarted/)
 
-数据分析
+### 数据分析
 ### [pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html)
 
-数学工具
+### 数学工具
 ### [SciPy](https://docs.scipy.org/doc/)
 ### [NumPy](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
 ### [Matplotlib](http://matplotlib.org/1.5.3/index.html)
