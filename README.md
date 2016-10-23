@@ -91,5 +91,6 @@
 
 
 ## 7. 锻炼技能
-### [各种难题](https://projecteuler.net/archives)
-### [PK一下](https://www.codewars.com/?language=python)
+### [ProjectEuler](https://projecteuler.net/archives)
+### [CodeWars](https://www.codewars.com/?language=python)
+### [LeetCode](https://leetcode.com/)
