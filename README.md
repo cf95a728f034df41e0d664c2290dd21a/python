@@ -51,6 +51,7 @@
 ### 5.7. [The Python Standard Library](https://docs.python.org/3/library/index.html)
 ### 5.8. [The Python Language Reference](https://docs.python.org/3/reference/index.html)
 ### 5.9. [Generators: The Final Frontier](http://dabeaz.com/finalgenerator/FinalGenerator.pdf)
+### 5.10. [Python Basic Tutorial, Python Advanced Tutorial, Python Useful Resources](http://www.tutorialspoint.com/python/)
 
 ## 6. 组件推荐
 
